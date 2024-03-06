@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/dashbord-teacher-style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/datepicker.material.css" />
+
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/datepicker.js"></script>
+
+    <!-- ? Custom JavaScript -->
+
+    <title>الحقائب</title>
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="img-log">
+            <img src="photo/Group 98954.png" alt="" />
+          </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="bags.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book-open ico"></i>
+              <span>حقائبي التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-message ico"></i>
+              <span>الرسائل</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-folder-open ico"></i>
+              <span>ملفاتي</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-right-from-bracket ico"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center" id="nav">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-comments"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="photo/Ellipse .png" alt="" />
+                <div class="infor-user">
+                  <h4>Ahmed Hawwam</h4>
+                  <p>example22@gmail.com</p>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+        <div class="main-styel">
+          <div class="main-content">
+            <div class="title">
+              <h4>
+                البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة
+                المهنية
+              </h4>
+              <p>
+                الرئيسية
+
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>حقائبي التعليمية</span>
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>تفاصيل الحقيبة</span>
+              </p>
+            </div>
+            <div class="celender-nots">
+              <div class="header">
+                <h4>اليوم : 12 مارس,2024 👋</h4>
+                <div class="today">
+                  <p>اليوم</p>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <input
+                    type="hidden"
+                    id="constrained"
+                    data-inline="true"
+                    data-multiple="true"
+                    data-open-on="today"
+                    data-time="true"
+                  />
+                  <!-- data-without="[2/13/2016,2/14/2016,2/17/2016]" -->
+                  <div class="set-live">
+                    <h4>الاسم و الفعل و الحرف</h4>
+                    <p class="color">المؤشر الاول</p>
+                    <hr />
+                    <div class="date">
+                      <img src="photo/ss.svg" alt="" />
+                      <p>الاحد , 28-05-2024</p>
+                    </div>
+                    <div class="time">
+                      <img src="photo/ff.svg" alt="" />
+                      <p>12م : 04م ( 4 ساعات )</p>
+                    </div>
+
+                    <hr />
+                    <div class="attch">
+                      <div class="folder">
+                        <img src="photo/folder.svg" alt="" />
+                        <p>arabic 1 .pdf</p>
+                      </div>
+                      <img src="photo/down.svg" alt="" />
+                    </div>
+                    <div class="attch">
+                      <div class="folder">
+                        <img src="photo/folder.svg" alt="" />
+                        <p>arabic 1 .pdf</p>
+                      </div>
+                      <img src="photo/down.svg" alt="" />
+                    </div>
+                    <div class="attch">
+                      <div class="folder">
+                        <img src="photo/folder.svg" alt="" />
+                        <p>arabic 1 .pdf</p>
+                      </div>
+                      <img src="photo/down.svg" alt="" />
+                    </div>
+                    <div class="start-live">
+                      <button class="live">تحضير اللايف</button>
+                    </div>
+                  </div>
+                  <div class="set-live">
+                    <h4>الاسم و الفعل و الحرف</h4>
+                    <p class="color">المؤشر الاول</p>
+                    <hr />
+                    <div class="date">
+                      <img src="photo/ss.svg" alt="" />
+                      <p>الاحد , 28-05-2024</p>
+                    </div>
+                    <div class="time">
+                      <img src="photo/ff.svg" alt="" />
+                      <p>12م : 04م ( 4 ساعات )</p>
+                    </div>
+                    <div class="discraption">
+                      <p>
+                        تعتبر دراسة النحو في اللغة العربية - وفي لغات أخرى أيضًا
+                        - من الجوانب الأساسية والحيوية في فهم وتطوير اللغة. إليك
+                        نبذة عن أهمية تعلم النحو: فهم بنية اللغة: يساعد دراسة
+                        النحو في فهم بنية الجمل وتركيبها، بما في ذلك أجزاء
+                        الكلام وعلاقتها مع بعضها البعض. تحسين التعبير: عندما
+                        يتقن الشخص النحو، يمكنه التعبير بوضوح ودقة أكبر. يتعلم
+                        كيفية استخدام الكلمات وترتيبها بطريقة تجعل المعنى
+                        مفهومًا للآخرين.
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="attch">
+                      <div class="folder">
+                        <img src="photo/folder.svg" alt="" />
+                        <p>arabic 1 .pdf</p>
+                      </div>
+                      <img src="photo/down.svg" alt="" />
+                    </div>
+                    <div class="attch">
+                      <div class="folder">
+                        <img src="photo/folder.svg" alt="" />
+                        <p>arabic 1 .pdf</p>
+                      </div>
+                      <img src="photo/down.svg" alt="" />
+                    </div>
+                    <div class="attch">
+                      <div class="folder">
+                        <img src="photo/folder.svg" alt="" />
+                        <p>arabic 1 .pdf</p>
+                      </div>
+                      <img src="photo/down.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="last-live">
+                    <h4>مراجعة على الأدوات والأساليب</h4>
+                    <p class="color">المؤشر الثاني</p>
+                    <hr />
+                    <div class="date">
+                      <img src="photo/ss.svg" alt="" />
+                      <p>الاحد , 28-05-2024</p>
+                    </div>
+                    <div class="time">
+                      <img src="photo/ff.svg" alt="" />
+                      <p>12م : 04م ( 4 ساعات )</p>
+                    </div>
+                  </div>
+                  <div class="last-live1">
+                    <h4>مراجعة على الأدوات والأساليب</h4>
+                    <p class="color">المؤشر الثاني</p>
+                    <hr />
+                    <div class="date">
+                      <img src="photo/ss.svg" alt="" />
+                      <p>الاحد , 28-05-2024</p>
+                    </div>
+                    <div class="time">
+                      <img src="photo/ff.svg" alt="" />
+                      <p>12م : 04م ( 4 ساعات )</p>
+                    </div>
+                  </div>
+                  <div class="last-live2">
+                    <h4>مراجعة على الأدوات والأساليب</h4>
+                    <p class="color">المؤشر الثاني</p>
+                    <hr />
+                    <div class="date">
+                      <img src="photo/ss.svg" alt="" />
+                      <p>الاحد , 28-05-2024</p>
+                    </div>
+                    <div class="time">
+                      <img src="photo/ff.svg" alt="" />
+                      <p>12م : 04م ( 4 ساعات )</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="table-responsive">
+                    <table class="table notes">
+                      <thead>
+                        <tr>
+                          <th scope="col">سبت</th>
+                          <th scope="col">الاحد</th>
+                          <th scope="col">الاثنين</th>
+                          <th scope="col">الثلاثاء</th>
+                          <th scope="col">الأربعاء</th>
+                          <th scope="col">الخميس</th>
+                          <th scope="col">الجمعه</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>3</span></td>
+                          <td><span>4</span></td>
+                          <td><span>5</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>6</span></td>
+                          <td><span>7</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>8</span></td>
+                          <td><span>9</span></td>
+                          <td><span>10</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td>
+                            <span>11</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>12</span></td>
+                          <td><span>13</span></td>
+                          <td><span>14</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>15</span></td>
+                          <td><span>16</span></td>
+                          <td><span>17</span></td>
+                          <td><span>18</span></td>
+                          <td><span>19</span></td>
+                          <td>
+                            <span>20</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>21</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>22</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>23</span></td>
+
+                          <td><span>24</span></td>
+                          <td><span>25</span></td>
+                          <td><span>26</span></td>
+                          <td><span>27</span></td>
+                          <td><span>28</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>29</span></td>
+                          <td><span>30</span></td>
+                          <td><span>31</span></td>
+                          <td><span>1</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>2</span></td>
+                          <td><span>3</span></td>
+                          <td>
+                            <span>4</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span>5</span></td>
+                          <td><span>6</span></td>
+                          <td><span>7</span></td>
+                          <td>
+                            <span>8</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>9</span></td>
+                          <td><span>10</span></td>
+                          <td>
+                            <span>11</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span>12</span></td>
+                          <td><span>13</span></td>
+                          <td><span>14</span></td>
+                          <td>
+                            <span>15</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                          <td><span>16</span></td>
+                          <td><span>17</span></td>
+                          <td>
+                            <span>18</span>
+                            <div class="text-note">
+                              <h4>لايف 12م : 04م</h4>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+    <script>
+      $(document).ready(function () {
+        progress_bar();
+      });
+
+      function progress_bar() {
+        var speed = 30;
+        var items = $(".progress_bar").find(".progress_bar_item");
+
+        items.each(function () {
+          var item = $(this).find(".progress");
+          var itemValue = item.data("progress");
+          var i = 0;
+          var value = $(this);
+
+          var count = setInterval(function () {
+            if (i <= itemValue) {
+              var iStr = i.toString();
+              item.css({
+                width: iStr + "%",
+              });
+              value.find(".item_value").html(iStr + "%");
+            } else {
+              clearInterval(count);
+            }
+            i++;
+          }, speed);
+        });
+      }
+    </script>
+    <script>
+      var constrained = new Datepicker("#constrained", {
+        // 10 days in the past
+        min: (function () {
+          var date = new Date();
+          date.setDate(date.getDate() - 10);
+          return date;
+        })(),
+
+        // 10 days in the future
+        max: (function () {
+          var date = new Date();
+          date.setDate(date.getDate() + 10);
+          return date;
+        })(),
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
