@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/dashbord-teacher-style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>لا يوجد معلومات</title>
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+        <div class="img-log">
+            <img src="photo/logo.png" alt="" />
+          </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="bags.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book-open ico"></i>
+              <span>حقائبي التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="massage.html" class="nav-link align-middle">
+              <i class="fa-solid fa-message ico"></i>
+              <span>الرسائل</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="folders.html" class="nav-link align-middle">
+              <i class="fa-solid fa-folder-open ico"></i>
+              <span>ملفاتي</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-right-from-bracket ico"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center" id="nav">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-comments"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="photo/Ellipse .png" alt="" />
+                <div class="infor-user">
+                  <h4>Ahmed Hawwam</h4>
+                  <p>example22@gmail.com</p>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+        <div class="main-styel">
+            <div class="title">
+              <h4>جميع الملفات ( 20 )</h4>
+              <p>
+                الرئيسية
+
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>ملفاتى</span>
+              </p>
+            </div>
+          <div class="main-content">
+            <div class="folders">
+              <div class="head">
+                <div class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="search" placeholder="بحت" />
+                </div>
+                <div class="upload-folder">
+                  <button
+                    class="up-folder"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    اضافه ملف <i class="fa-solid fa-folder-plus"></i>
+                  </button>
+                </div>
+                <input
+                  type="file"
+                  id="fileInput"
+                  style="display: none"
+                  onchange="handleFileSelect()"
+                />
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="folder-content">
+                    <div class="all-content">
+                      <img src="photo/folder.svg" alt="" />
+                      <div class="text-focont">
+                        <h4>arabic 1 .pdf</h4>
+                        <p>20 MB</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              اضافه تحضير خاص بك
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-area">
+              <label for="">اسم الملف المرفق</label>
+              <div class="text-modal">
+                <img src="photo/text.svg" alt="" />
+                <input type="text" />
+              </div>
+            </div>
+            <label for="">نوع الملف المرفق</label>
+            <select class="form-select moda" aria-label="Default select example">
+              <option selected>النوع</option>
+              <option value="1">png</option>
+              <option value="2">pdf</option>
+              <option value="3">txt</option>
+            </select>
+            <div class="add-attch">
+              <div class="form-group upload_file">
+                <label for=""> اضافة مرفقات</label>
+                <label for="imageCover" class="upload_file_label">
+                  <div class="ico-gala" id="imageIcon"></div>
+                  <p id="imageText"></p>
+                  <span id="fileNameImage"
+                    ><i class="fa-solid fa-circle-plus"></i
+                  ></span>
+                </label>
+                <input
+                  type="file"
+                  name=""
+                  id="imageCover"
+                  class="form-control"
+                  accept="image/*"
+                  hidden
+                />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addrate()">
+              تأكيد
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

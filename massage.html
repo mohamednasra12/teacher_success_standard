@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/dashbord-teacher-style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>لا يوجد معلومات</title>
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+        <div class="img-log">
+          <img src="photo/logo.png" alt="" />
+        </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="bags.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book-open ico"></i>
+              <span>حقائبي التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="massage.html" class="nav-link align-middle">
+              <i class="fa-solid fa-message ico"></i>
+              <span>الرسائل</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="folders.html" class="nav-link align-middle">
+              <i class="fa-solid fa-folder-open ico"></i>
+              <span>ملفاتي</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-right-from-bracket ico"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center" id="nav">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-comments"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="photo/Ellipse .png" alt="" />
+                <div class="infor-user">
+                  <h4>Ahmed Hawwam</h4>
+                  <p>example22@gmail.com</p>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+        <div class="main-styel">
+          <div class="title">
+            <h4>الرسائل</h4>
+            <p>
+              الرئيسية
+
+              <i class="fa-solid fa-chevron-left"></i>
+              <span>الرسائل</span>
+            </p>
+          </div>
+          <div class="main-content">
+            <div class="all-massage">
+              <div class="right-massage">
+                <div class="hed">
+                  <h4>جميع الرسائل ( 12 )</h4>
+                  <div class="form-control">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="بحث " />
+                    <img src="photo/ffffff.svg" alt="" />
+                  </div>
+                </div>
+                <!-- for each -->
+                <div class="chat">
+                  <!-- صورة صاحب الشات -->
+                  <img src="photo/chat1.png" alt="" />
+                  <!-- صورة صاحب الشات -->
+                  <div class="text-chat">
+                    <!-- اسم صاحب الشات -->
+                    <h4>محمد حسين</h4>
+                    <!-- اسم صاحب الشات -->
+                    <!-- جزء من رسالة صاحب الشات -->
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                    <!-- جزء من رسالة صاحب الشات -->
+                  </div>
+                </div>
+                <!-- for each -->
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+                <div class="chat">
+                  <img src="photo/chat1.png" alt="" />
+                  <div class="text-chat">
+                    <h4>محمد حسين</h4>
+                    <p>
+                      السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات علي
+                      اللايف القادم ؟
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="left-massage">
+                <div class="top">
+                  <div class="chat">
+                    <!-- صورة صاحب الشات -->
+                    <img src="photo/chat1.png" alt="" />
+                    <!-- صورة صاحب الشات -->
+                    <div class="text-chat">
+                      <!-- اسم صاحب الشات -->
+                      <h4>محمد حسين</h4>
+                      <!-- اسم صاحب الشات -->
+                      <!-- جزء من رسالة صاحب الشات -->
+                      <p>
+                        نشط الأن
+                        <span class="green"
+                          ><i class="fa-solid fa-circle"></i
+                        ></span>
+                      </p>
+                      <!-- جزء من رسالة صاحب الشات -->
+                    </div>
+                  </div>
+                </div>
+                <div class="mid">
+                  <div class="todays">
+                    <p>اليوم</p>
+                  </div>
+                </div>
+                <!-- foreach -->
+                <div class="content-chat">
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                  <div class="mid-chat">
+                    <div class="right-chat">
+                      <p>
+                        السلام عليكم و رحمة الله و بركاته .. هل يوجد اختبارات
+                        علي اللايف القادم ؟
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                    <div class="left-chat">
+                      <p>
+                        السلام عليكم ورحمة الله كيفك ؟ .. لا يوجد اختبارات اخ
+                        محمد
+                      </p>
+                      <p>6:30PM</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- foreach -->
+                <div class="bottom">
+                  <div class="send-massage">
+                    <div class="text-a">
+                      <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="اكتب رسالتك هنا"
+                      />
+                      <div class="uplo" id="uploadIcon" onclick="triggerFileInput()">
+                        <i class="fa-solid fa-circle-plus" style="cursor: pointer"></i>
+                    </div>
+                    <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelect()">
+                      <i
+                        class="fa-regular fa-paper-plane"
+                        id="sendIcon"
+                        style="display: none; cursor: pointer"
+                        onclick="sendMessage()"
+                      ></i>
+                    </div>
+                    <div
+                      class="emoji-list"
+                      id="emojiList"
+                      style="display: none"
+                    >
+                      <!-- Your list of emojis goes here -->
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <span>😀</span>
+                      <span>😃</span>
+                      <span>😄</span>
+                      <!-- Add more emojis as needed -->
+                    </div>
+                    <i
+                      class="fa-solid fa-face-grin-beam"
+                      style="cursor: pointer"
+                      onclick="toggleEmojiList()"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+    <script>
+      // Function to handle sending the message (you can customize this according to your needs)
+      function sendMessage() {
+        var messageInput = document.getElementById("messageInput").value;
+
+        // Assuming you want to handle sending the message here
+        // You can replace this with your actual logic
+        alert("Message sent: " + messageInput);
+
+        // Optionally, you can clear the message input and hide the send icon
+        document.getElementById("messageInput").value = "";
+        document.getElementById("sendIcon").style.display = "none";
+      }
+
+      // Toggle between the upload and send icons when the message input is focused
+      document
+        .getElementById("messageInput")
+        .addEventListener("focus", function () {
+          document.getElementById("uploadIcon").style.display = "none";
+          document.getElementById("sendIcon").style.display = "block";
+        });
+
+      // Toggle back to the upload icon when the message input loses focus
+      document
+        .getElementById("messageInput")
+        .addEventListener("blur", function () {
+          document.getElementById("uploadIcon").style.display = "block";
+          document.getElementById("sendIcon").style.display = "none";
+        });
+
+    </script>
+    <script>
+      function triggerFileInput() {
+        // Trigger click on the hidden file input
+        document.getElementById("fileInput").click();
+      }
+
+      function toggleEmojiList() {
+        var emojiList = document.getElementById("emojiList");
+
+        // Toggle the visibility of the emoji list
+        if (
+          emojiList.style.display === "none" ||
+          emojiList.style.display === ""
+        ) {
+          emojiList.style.display = "block";
+        } else {
+          emojiList.style.display = "none";
+        }
+      }
+
+      // Close the emoji list if the user clicks outside of it
+      document.addEventListener("click", function (event) {
+        var emojiList = document.getElementById("emojiList");
+        var emojiIcon = document.querySelector(".fa-face-grin-beam");
+
+        if (
+          event.target !== emojiIcon &&
+          !emojiIcon.contains(event.target) &&
+          !emojiList.contains(event.target)
+        ) {
+          emojiList.style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      function triggerFileInput() {
+    // Trigger a click on the hidden file input when the icon within the div is clicked
+    document.getElementById('fileInput').click();
+}
+
+function handleFileSelect() {
+    // Handle the selected files here
+    var selectedFiles = document.getElementById('fileInput').files;
+    
+    // Do something with the selected files, e.g., upload them
+    console.log('Selected files:', selectedFiles);
+    // You can perform file upload logic here
+}
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

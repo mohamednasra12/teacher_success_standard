@@ -49,9 +49,9 @@
           class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
           id="menu"
         >
-          <div class="img-log">
-            <img src="photo/Group 98954.png" alt="" />
-          </div>
+        <div class="img-log">
+          <img src="photo/logo.png" alt="" />
+        </div>
           <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-house-user ico"></i>
@@ -65,13 +65,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="massage.html" class="nav-link align-middle">
               <i class="fa-solid fa-message ico"></i>
               <span>الرسائل</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="folders.html" class="nav-link align-middle">
               <i class="fa-solid fa-folder-open ico"></i>
               <span>ملفاتي</span>
             </a>
@@ -185,21 +185,21 @@
         <!-- ======= End navbar ======= -->
         <!-- content -->
         <div class="main-styel">
-          <div class="main-content">
-            <div class="title">
-              <h4>
-                البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة
-                المهنية
-              </h4>
-              <p>
-                الرئيسية
+          <div class="title">
+            <h4>
+              البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة
+              المهنية
+            </h4>
+            <p>
+              الرئيسية
 
-                <i class="fa-solid fa-chevron-left"></i>
-                <span>حقائبي التعليمية</span>
-                <i class="fa-solid fa-chevron-left"></i>
-                <span>تفاصيل الحقيبة</span>
-              </p>
-            </div>
+              <i class="fa-solid fa-chevron-left"></i>
+              <span>حقائبي التعليمية</span>
+              <i class="fa-solid fa-chevron-left"></i>
+              <span>تفاصيل الحقيبة</span>
+            </p>
+          </div>
+          <div class="main-content">
             <div class="celender-nots">
               <div class="header">
                 <h4>اليوم : 12 مارس,2024 👋</h4>
@@ -210,7 +210,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4">
                   <input
                     type="hidden"
                     id="constrained"
@@ -256,7 +256,13 @@
                       <img src="photo/down.svg" alt="" />
                     </div>
                     <div class="start-live">
-                      <button class="live">تحضير اللايف</button>
+                      <button
+                        class="live"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        تحضير اللايف
+                      </button>
                     </div>
                   </div>
                   <div class="set-live">
@@ -346,7 +352,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 col-md-8">
                   <div class="table-responsive">
                     <table class="table notes">
                       <thead>
@@ -373,7 +379,8 @@
                           </td>
                           <td><span>3</span></td>
                           <td><span>4</span></td>
-                          <td><span>5</span>
+                          <td>
+                            <span>5</span>
                             <div class="text-note">
                               <h4>لايف 12م : 04م</h4>
                             </div>
@@ -384,7 +391,8 @@
                         <tr>
                           <td><span>8</span></td>
                           <td><span>9</span></td>
-                          <td><span>10</span>
+                          <td>
+                            <span>10</span>
                             <div class="text-note">
                               <h4>لايف 12م : 04م</h4>
                             </div>
@@ -414,7 +422,8 @@
                           <td><span>21</span></td>
                         </tr>
                         <tr>
-                          <td><span>22</span>
+                          <td>
+                            <span>22</span>
                             <div class="text-note">
                               <h4>لايف 12م : 04م</h4>
                             </div>
@@ -431,7 +440,8 @@
                           <td><span>29</span></td>
                           <td><span>30</span></td>
                           <td><span>31</span></td>
-                          <td><span>1</span>
+                          <td>
+                            <span>1</span>
                             <div class="text-note">
                               <h4>لايف 12م : 04م</h4>
                             </div>
@@ -495,6 +505,73 @@
         <!-- content -->
       </section>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              اضافه تحضير خاص بك
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-area">
+              <label for="">نص التحضير</label>
+              <textarea name="" id=""></textarea>
+            </div>
+            <div class="add-attch">
+              <div class="form-group upload_file">
+                <label for=""> اضافة مرفقات</label>
+                <label for="imageCover" class="upload_file_label">
+                  <div class="ico-gala" id="imageIcon"></div>
+                  <p id="imageText"></p>
+                  <span id="fileNameImage"
+                    ><i class="fa-solid fa-circle-plus"></i
+                  ></span>
+                </label>
+                <input
+                  type="file"
+                  name=""
+                  id="imageCover"
+                  class="form-control"
+                  accept="image/*"
+                  hidden
+                />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addrate()">تأكيد</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+    integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script>
+      function addrate() {
+        Swal.fire({
+          html:
+            ' <br> <img src="photo/finger.png" alt="">' +
+            "<br>" +
+            "<br>  <h4 class='sweet'>تم اضافة التحضير بنجاح   </h4>",
+        });
+      }
+    </script>
     <script>
       $(document).ready(function () {
         progress_bar();
@@ -540,6 +617,30 @@
           date.setDate(date.getDate() + 10);
           return date;
         })(),
+      });
+    </script>
+    <script>
+      const fileInputImage = document.getElementById("imageCover");
+      const fileNameImage = document.getElementById("fileNameImage");
+      const imageIcon = document.getElementById("imageIcon");
+      const imageText = document.getElementById("imageText");
+
+      fileInputImage.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+
+        // Display the uploaded image
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          imageIcon.style.display = "none";
+          imageText.style.display = "none";
+          fileNameImage.textContent = "";
+          const img = document.createElement("img");
+          img.src = e.target.result;
+          img.style.width = "100%";
+          img.style.height = "auto";
+          fileNameImage.appendChild(img);
+        };
+        reader.readAsDataURL(file);
       });
     </script>
     <script src="js/main.js"></script>
