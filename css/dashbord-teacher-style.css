@@ -1271,7 +1271,6 @@ h5#exampleModalLabel {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
- 
 }
 .main-live .questions-files .all-down {
   border-bottom: 1px dashed;
@@ -1786,13 +1785,50 @@ h5#exampleModalLabel {
   align-items: center;
   gap: 10px;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background-color: #000000 !important;
   color: white !important;
+}
+button#closeSidebarBtn {
+  text-align: center;
+  background-color: #e5890a;
+  color: white;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-inline-start: auto;
+  display: block;
+  font-family: "bold";
+}
+.swal2-title {
+  font-family: "bold";
+}
+button.swal2-confirm.swal2-styled {
+  font-family: 'bold';
+}
+.goout {
+  cursor: pointer;
 }
 /* live */
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1476px) {
+  .main-live .line-stap3::after {
+    right: 17px;
+  }
+  .main-live .line-stap4::after {
+    right: 17px;
+  }
+  .questions-files p {
+    width: 100%;
+  }
+  .main-live .send-massages {
+    width: 57%;
+  }
+  .main-live .Recepion-massages {
+    width: 57%;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .img img {
     width: 100%;
@@ -1807,6 +1843,37 @@ h5#exampleModalLabel {
   .chat img {
     width: 45px;
     height: 45px;
+  }
+  .main-live .line-stap::after {
+    top: 23px;
+    right: 13px;
+  }
+  .main-live .line-stap3::after {
+    height: 50px;
+    top: 37.2px;
+    right: 18px;
+  }
+  .main-live .bord1::after {
+    top: 90px;
+  }
+  .main-live .line-stap1::after {
+    top: 94px;
+    right: 13px;
+  }
+  .main-live .line-stap4::after {
+    height: 52px;
+    top: 111px;
+    right: 18px;
+  }
+  .main-live .bord2::after {
+    top: 164px;
+  }
+  .main-live .line-stap2::after {
+    top: 168px;
+    right: 13px;
+  }
+  .main-live .dropdown-toggle {
+    margin-inline-end: -11px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1915,6 +1982,56 @@ h5#exampleModalLabel {
     box-shadow: unset;
     height: 40px;
     padding: 1rem;
+  }
+  .main-live .dropdown-toggle {
+    margin-inline-end: -10px;
+  }
+  .questions-files p {
+    width: 100%;
+  }
+  .main-live .send-massages {
+    width: 61%;
+  }
+  .main-live .Recepion-massages {
+    width: 61%;
+  }
+  .main-live .live-camera {
+    background-position: center;
+  }
+  .main-live .bord::after {
+    right: 6px;
+    top: 14px;
+  }
+  .main-live .bord1::after {
+    right: 6px;
+    top: 94px;
+  }
+  .main-live .bord2::after {
+    right: 6px;
+    top: 172px;
+  }
+  .main-live .line-stap::after {
+    top: 18px;
+    right: 10px;
+  }
+  .main-live .line-stap1::after {
+    top: 98px;
+    right: 10px;
+  }
+  .main-live .line-stap2::after {
+    top: 176px;
+    right: 10px;
+  }
+  .main-live .line-stap3::after {
+    width: 1px;
+    height: 57px;
+    top: 35.2px;
+    right: 7%;
+  }
+  .main-live .line-stap4::after {
+    height: 57px;
+    top: 115px;
+    right: 7%;
   }
 }
 
@@ -2064,6 +2181,55 @@ h5#exampleModalLabel {
     height: 40px;
     padding: 1rem;
   }
+  .main-live .adress {
+    background-color: #261601;
+  }
+  .main-live .dropdown-toggle {
+    margin-inline-end: -9px;
+  }
+  .main-live .questions-files .adress {
+    background-color: #231402;
+  }
+  .main-live .bord::after {
+    right: 5px;
+    top: 10px;
+  }
+  .main-live .line-stap::after {
+    top: 14px;
+    right: 9px;
+  }
+  .main-live .bord1::after {
+    right: 5px;
+    top: 57px;
+  }
+  .main-live .bord2::after {
+    right: 5px;
+    top: 102px;
+  }
+  .main-live .line-stap2::after {
+    top: 61px;
+    right: 9px;
+  }
+  .main-live .line-stap3::after {
+    height: 25px;
+    top: 30.2px;
+    right: 14px;
+  }
+  .main-live .line-stap1::after {
+    top: 106px;
+    right: 9px;
+  }
+  .main-live .line-stap4::after {
+    height: 24px;
+    top: 78px;
+    right: 14px;
+  }
+  .main-live .Attendees .adress {
+    background-color: #090500;
+  }
+  .questions-files p {
+    width: 100%;
+  }
 }
 
 /* Extra small devices (phones, 767px and down) */
@@ -2081,10 +2247,12 @@ h5#exampleModalLabel {
   }
   .sidebar .nav-pills svg {
     display: block !important;
+    font-size: 0.5rem;
   }
   .sidebar .nav-pills .nav-item .nav-link.active span,
   .sidebar .nav-pills .nav-item .nav-link span {
     width: 78px;
+    font-size: 1rem;
   }
 
   #nav {
@@ -2201,4 +2369,114 @@ h5#exampleModalLabel {
     width: 30px;
     height: 30px;
   }
+  .main-live .imgs-live img {
+    width: 20px;
+    height: 20px;
+    margin-left: -8px;
+  }
+  .main-live .circle-num {
+    width: 20px;
+    height: 20px;
+    margin-left: -8px;
+  }
+  .main-live .head-live {
+    display: block;
+  }
+  .main-live .dropdown-toggle {
+    margin-inline-end: -8px;
+  }
+  .main-live .adress {
+    background-color: #271702;
+  }
+  .main-live .questions-files .adress {
+    background-color: #231402;
+  }
+  .main-live .live-camera {
+    background-position: top;
+  }
+  .questions-files p {
+    width: 100%;
+  }
+  .main-live .files p {
+    font-size: 1rem;
+  }
+  .main-live .send-massages {
+    width: 61%;
+  }
+  .main-live .Recepion-massages {
+    width: 61%;
+  }
+  .preson-send img {
+    width: 20px;
+    height: 20px;
+  }
+  .preson-Recepion img {
+    width: 20px;
+    height: 20px;
+  }
+  .main-live .massages {
+    height: 45px;
+  }
+  .main-live .line-stap::after {
+    top: 12px;
+  }
+  .main-live .bord::after {
+    right: 4px;
+    top: 8px;
+  }
+  .main-live .line-stap3::after {
+    top: 29.2px;
+    right: 3%;
+  }
+  .main-live .line-stap1::after {
+    top: 52px;
+    right: 7px;
+  }
+  .main-live .bord1::after {
+    right: 3px;
+    top: 48px;
+  }
+  .main-live .line-stap3::after {
+    height: 19px;
+  }
+  .main-live .line-stap4::after {
+    height: 20px;
+    top: 69px;
+    right: 3%;
+  }
+  .main-live .line-stap2::after {
+    top: 92px;
+    right: 7px;
+  }
+  .main-live .bord2::after {
+    right: 3px;
+    top: 88px;
+  }
+  .main-live .Attendees .adress {
+    background-color: #080500;
+  }
+  .right-massage .form-control input {
+    width: 90%;
+  }
+  .right-chat {
+    width: 70%;
+  }
+  .left-chat {
+    width: 70%;
+  }
+  #emojiList {
+    display: block;
+    position: absolute;
+    left: -4px;
+    top: -81px;
+    z-index: 100001;
+    background-color: beige;
+    padding: 0.5rem;
+    overflow: scroll;
+    width: 50%;
+}
+.menu svg {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
 }

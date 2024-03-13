@@ -45,7 +45,8 @@
           class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
           id="menu"
         >
-        <div class="img-log">
+          <button id="closeSidebarBtn" class="d-block d-sm-none">close</button>
+          <div class="img-log">
             <img src="photo/logo.png" alt="" />
           </div>
           <li class="nav-item">
@@ -73,10 +74,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <div class="nav-link align-middle goout" onclick="blockAlert()">
               <i class="fa-solid fa-right-from-bracket ico"></i>
               <span>تسجيل الخروج</span>
-            </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -108,31 +109,17 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li>
-                      <a class="dropdown-item"> الاشعارات </a>
+                      <div class="dropdown-item">
+                        <form action="">
+                          <input type="search" placeholder="ابحث هنا ....." />
+                          <input type="submit" value="بحث" />
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="changelocal d-inline-block">
-                <div class="dropdown lang">
-                  <a
-                    class="btn dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <!-- lang -->
-                    <i class="fa-regular fa-comments"></i>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li>
-                      <a class="dropdown-item"> الاشعارات </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <a href="massage.html"><i class="fa-regular fa-comments"></i></a>
               <div class="changelocal d-inline-block">
                 <div class="dropdown lang">
                   <a
@@ -181,15 +168,15 @@
         <!-- ======= End navbar ======= -->
         <!-- content -->
         <div class="main-styel">
-            <div class="title">
-              <h4>جميع الملفات ( 20 )</h4>
-              <p>
-                الرئيسية
+          <div class="title">
+            <h4>جميع الملفات ( 20 )</h4>
+            <p>
+              الرئيسية
 
-                <i class="fa-solid fa-chevron-left"></i>
-                <span>ملفاتى</span>
-              </p>
-            </div>
+              <i class="fa-solid fa-chevron-left"></i>
+              <span>ملفاتى</span>
+            </p>
+          </div>
           <div class="main-content">
             <div class="folders">
               <div class="head">
@@ -396,7 +383,10 @@
               </div>
             </div>
             <label for="">نوع الملف المرفق</label>
-            <select class="form-select moda" aria-label="Default select example">
+            <select
+              class="form-select moda"
+              aria-label="Default select example"
+            >
               <option selected>النوع</option>
               <option value="1">png</option>
               <option value="2">pdf</option>
@@ -429,6 +419,28 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            '<h5 class="swal2-title">   هل أنت متأكد من تسجيل الخروج؟ </h5>' +
+            '<p class="swal2-html-container">  </p>',
+
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: "نعم",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
 
     <script src="js/main.js"></script>
   </body>

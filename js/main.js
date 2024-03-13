@@ -1,9 +1,4 @@
-//loader
-// let loader = document.getElementById('preloader');
-// window.addEventListener('load', function () {
-//   loader.style.display = 'none';
-// });
-//loader
+
 
 var tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -36,52 +31,14 @@ var tooltipTriggerList = [].slice.call(
   toggler.addEventListener("click", function () {
     sideBar.classList.toggle("open");
   });
-  //=========== sidebar toggle =============
-  // //=========== Close inspect =============
-  
-  // $(document).ready(function () {
-  //   $(".sidebar").hover(
-  //     function () {
-  //       $(".sidebar").addClass("opened");
-  //     },
-  //     function () {
-  //       $(".sidebar").removeClass("opened");
-  //     }
-  //   );
-  // });
+
   
   $(document).ready(function () {
     $(".close").on("click", function () {
       $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
     });
   });
-  // $(document).ready(function () {
-  //     $(".sidebar").hover(
-  //       function () {
-  //         $(".sidebar").addClass("opened");
-  //       },
-  //       function () {
-  //         $(".sidebar").removeClass("opened");
-  //       }
-  //     );
-  
-  //     $(".sidebar").on("click", function (event) {
-  //       event.stopPropagation(); // Prevents the click event from reaching parent elements
-  //     });
-  
-  //     $(".close").on("click", function (event) {
-  //       $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
-  //       event.stopPropagation(); // Prevents the click event from reaching parent elements
-  //     });
-  //   });
-  
-  // $(document).ready(function() {
-  //   $('.summernote').summernote(
-  //     {
-  //       height: 300,
-  //     }
-  //   );
-  // });
+
  
 
 document.querySelectorAll(".nav-link").forEach((link) => {
@@ -91,3 +48,13 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   }
 });
   
+
+
+  // Get references to the button and the sidebar
+  const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+  const sidebar = document.querySelector('.sidebar');
+
+  // Add a click event listener to the button
+  closeSidebarBtn.addEventListener('click', function() {
+    sidebar.classList.toggle('open'); // Toggle the 'open' class on the sidebar
+  });

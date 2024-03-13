@@ -45,6 +45,7 @@
           class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
           id="menu"
         >
+          <button id="closeSidebarBtn" class="d-block d-sm-none">close</button>
           <div class="img-log">
             <img src="photo/logo.png" alt="" />
           </div>
@@ -73,10 +74,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <div class="nav-link align-middle goout" onclick="blockAlert()">
               <i class="fa-solid fa-right-from-bracket ico"></i>
               <span>تسجيل الخروج</span>
-            </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -108,31 +109,17 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li>
-                      <a class="dropdown-item"> الاشعارات </a>
+                      <div class="dropdown-item">
+                        <form action="">
+                          <input type="search" placeholder="ابحث هنا ....." />
+                          <input type="submit" value="بحث" />
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="changelocal d-inline-block">
-                <div class="dropdown lang">
-                  <a
-                    class="btn dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <!-- lang -->
-                    <i class="fa-regular fa-comments"></i>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li>
-                      <a class="dropdown-item"> الاشعارات </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <a href="massage.html"><i class="fa-regular fa-comments"></i></a>
               <div class="changelocal d-inline-block">
                 <div class="dropdown lang">
                   <a
@@ -240,228 +227,263 @@
                 </div>
               </div>
             </div>
-           <a href="detalies_bags.html">
-            <div class="bags-card">
-              <div class="row">
-               <div class="col-lg-4 col-md-12">
-                 <div class="img">
-                   <img src="photo/photo-bags.png" alt="">
-                 </div>
-               </div>
-               <div class="col-lg-8 col-md-12">
-                 <div class="adress-card">
-                   <h4>البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة المهنية</h4>
-                   <p class="stats">حقيبة جديدة</p>
-                 </div>
-                 <div class="card-content">
-                   <p>لغة عربية . ( 20/30 ) مُتدرب</p>
-                   <p>انشأت بتاريخ 25 يناير,2024</p>
-                 </div>
-                 <div class="reat">
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <div class="small">
-                     <p>4.9</p>
-                   </div>
-                   <p class="text-reat">(220 التقيم)</p>
-                 </div>
-                 <div class="works">
-                   <div class="prag">
-                     <img src="photo/right.svg" alt="">
-                     <p>اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية</p>
-                   </div>
-                   <div class="prag">
-                     <img src="photo/right.svg" alt="">
-                     <p>اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية</p>
-                   </div>
-                 </div>
-                 <div class="scope">
-                   <img src="photo/scop.svg" alt="">
-                   <p><span>الفئة المستهدفة : </span>معلمي و معلمات اللغة العربية بالمراحل التعليمية الابتدائي و المتوسط و الثانوي ممن يسعون للحصول علي الرخصة لمهنية</p>
-                 </div>
-                 <div class="last-card">
-                   <div class="clele">
-                     <img src="photo/clele.svg" alt="">
-                     <p>2024-05-30
-                       2024-02-24</p>
-                   </div>
-                 <div class="win">
-                   <img src="photo/win.svg" alt="">
-                   <p>25 محاضرة</p>
-                 </div>
-                    <div class="hours">
-                     <img src="photo/houere.svg" alt="">
-                     <p>1520 ساعة</p>
+            <a href="detalies_bags.html">
+              <div class="bags-card">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="img">
+                      <img src="photo/photo-bags.png" alt="" />
                     </div>
-                     <div class="days">
-                       <img src="photo/days.svg" alt="">
-                     <p>85 يوم</p>
-                     </div>
-                 </div>
-               </div>
-              </div>
-               </div>
-           </a>
-           <a href="detalies_bags.html">
-            <div class="bags-card">
-              <div class="row">
-               <div class="col-lg-4 col-md-12">
-                 <div class="img">
-                   <img src="photo/photo-bags.png" alt="">
-                 </div>
-               </div>
-               <div class="col-lg-8 col-md-12">
-                 <div class="progress_bar">
-                   <div class="progress_bar_item">
-                     <div class="item_value cell shrink">0%</div>
-                     <div class="item_bar cell">
-                       <div class="progress" data-progress="50"></div>
-                       <h4>مستوي التقدم</h4>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="adress-card">
-                   <h4>البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة المهنية</h4>
-                   <p class="stats-tow">حقيبة حالية</p>
-                 </div>
-                 <div class="card-content">
-                   <p>لغة عربية . ( 20/30 ) مُتدرب</p>
-                   <p>انشأت بتاريخ 25 يناير,2024</p>
-                 </div>
-                 <div class="reat">
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <div class="small">
-                     <p>4.9</p>
-                   </div>
-                   <p class="text-reat">(220 التقيم)</p>
-                 </div>
-                 <div class="works">
-                   <div class="prag">
-                     <img src="photo/right.svg" alt="">
-                     <p>اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية</p>
-                   </div>
-                   <div class="prag">
-                     <img src="photo/right.svg" alt="">
-                     <p>اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية</p>
-                   </div>
-                 </div>
-                 <div class="scope">
-                   <img src="photo/scop.svg" alt="">
-                   <p><span>الفئة المستهدفة : </span>معلمي و معلمات اللغة العربية بالمراحل التعليمية الابتدائي و المتوسط و الثانوي ممن يسعون للحصول علي الرخصة لمهنية</p>
-                 </div>
-                 <div class="last-card">
-                   <div class="clele">
-                     <img src="photo/clele.svg" alt="">
-                     <p>2024-05-30
-                       2024-02-24</p>
-                   </div>
-                 <div class="win">
-                   <img src="photo/win.svg" alt="">
-                   <p>25 محاضرة</p>
-                 </div>
-                    <div class="hours">
-                     <img src="photo/houere.svg" alt="">
-                     <p>1520 ساعة</p>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="adress-card">
+                      <h4>
+                        البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي
+                        الرخصة المهنية
+                      </h4>
+                      <p class="stats">حقيبة جديدة</p>
                     </div>
-                     <div class="days">
-                       <img src="photo/days.svg" alt="">
-                     <p>85 يوم</p>
-                     </div>
-                 </div>
-               </div>
-              </div>
-               </div>
-           </a>
-           <a href="detalies_bags.html">
-            <div class="bags-card">
-              <div class="row">
-               <div class="col-lg-4 col-md-12">
-                 <div class="img">
-                   <img src="photo/photo-bags.png" alt="">
-                 </div>
-               </div>
-               <div class="col-lg-8 col-md-12">
-                 <div class="adress-card">
-                   <h4>البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة المهنية</h4>
-                   <p class="stats-three">حقيبة مُنتهية</p>
-                 </div>
-                 <div class="card-content">
-                   <p>لغة عربية . ( 20/30 ) مُتدرب</p>
-                   <p>انشأت بتاريخ 25 يناير,2024</p>
-                 </div>
-                 <div class="reat">
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <i class="fa-regular fa-star"></i>
-                   <div class="small">
-                     <p>4.9</p>
-                   </div>
-                   <p class="text-reat">(220 التقيم)</p>
-                 </div>
-                 <div class="works">
-                   <div class="prag">
-                     <img src="photo/right.svg" alt="">
-                     <p>اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية</p>
-                   </div>
-                   <div class="prag">
-                     <img src="photo/right.svg" alt="">
-                     <p>اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية</p>
-                   </div>
-                 </div>
-                 <div class="scope">
-                   <img src="photo/scop.svg" alt="">
-                   <p><span>الفئة المستهدفة : </span>معلمي و معلمات اللغة العربية بالمراحل التعليمية الابتدائي و المتوسط و الثانوي ممن يسعون للحصول علي الرخصة لمهنية</p>
-                 </div>
-                 <div class="last-card">
-                   <div class="clele">
-                     <img src="photo/clele.svg" alt="">
-                     <p>2024-05-30
-                       2024-02-24</p>
-                   </div>
-                 <div class="win">
-                   <img src="photo/win.svg" alt="">
-                   <p>25 محاضرة</p>
-                 </div>
-                    <div class="hours">
-                     <img src="photo/houere.svg" alt="">
-                     <p>1520 ساعة</p>
+                    <div class="card-content">
+                      <p>لغة عربية . ( 20/30 ) مُتدرب</p>
+                      <p>انشأت بتاريخ 25 يناير,2024</p>
                     </div>
-                     <div class="days">
-                       <img src="photo/days.svg" alt="">
-                     <p>85 يوم</p>
-                     </div>
-                 </div>
-               </div>
+                    <div class="reat">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="small">
+                        <p>4.9</p>
+                      </div>
+                      <p class="text-reat">(220 التقيم)</p>
+                    </div>
+                    <div class="works">
+                      <div class="prag">
+                        <img src="photo/right.svg" alt="" />
+                        <p>
+                          اتقان معلمي اللغة العربية للجوانب المعرفية والادائية
+                          اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية
+                        </p>
+                      </div>
+                      <div class="prag">
+                        <img src="photo/right.svg" alt="" />
+                        <p>
+                          اتقان معلمي اللغة العربية للجوانب المعرفية والادائية
+                          اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية
+                        </p>
+                      </div>
+                    </div>
+                    <div class="scope">
+                      <img src="photo/scop.svg" alt="" />
+                      <p>
+                        <span>الفئة المستهدفة : </span>معلمي و معلمات اللغة
+                        العربية بالمراحل التعليمية الابتدائي و المتوسط و الثانوي
+                        ممن يسعون للحصول علي الرخصة لمهنية
+                      </p>
+                    </div>
+                    <div class="last-card">
+                      <div class="clele">
+                        <img src="photo/clele.svg" alt="" />
+                        <p>2024-05-30 2024-02-24</p>
+                      </div>
+                      <div class="win">
+                        <img src="photo/win.svg" alt="" />
+                        <p>25 محاضرة</p>
+                      </div>
+                      <div class="hours">
+                        <img src="photo/houere.svg" alt="" />
+                        <p>1520 ساعة</p>
+                      </div>
+                      <div class="days">
+                        <img src="photo/days.svg" alt="" />
+                        <p>85 يوم</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-               </div>
-           </a>
-              <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+            </a>
+            <a href="detalies_bags.html">
+              <div class="bags-card">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="img">
+                      <img src="photo/photo-bags.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="progress_bar">
+                      <div class="progress_bar_item">
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                          <div class="progress" data-progress="50"></div>
+                          <h4>مستوي التقدم</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="adress-card">
+                      <h4>
+                        البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي
+                        الرخصة المهنية
+                      </h4>
+                      <p class="stats-tow">حقيبة حالية</p>
+                    </div>
+                    <div class="card-content">
+                      <p>لغة عربية . ( 20/30 ) مُتدرب</p>
+                      <p>انشأت بتاريخ 25 يناير,2024</p>
+                    </div>
+                    <div class="reat">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="small">
+                        <p>4.9</p>
+                      </div>
+                      <p class="text-reat">(220 التقيم)</p>
+                    </div>
+                    <div class="works">
+                      <div class="prag">
+                        <img src="photo/right.svg" alt="" />
+                        <p>
+                          اتقان معلمي اللغة العربية للجوانب المعرفية والادائية
+                          اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية
+                        </p>
+                      </div>
+                      <div class="prag">
+                        <img src="photo/right.svg" alt="" />
+                        <p>
+                          اتقان معلمي اللغة العربية للجوانب المعرفية والادائية
+                          اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية
+                        </p>
+                      </div>
+                    </div>
+                    <div class="scope">
+                      <img src="photo/scop.svg" alt="" />
+                      <p>
+                        <span>الفئة المستهدفة : </span>معلمي و معلمات اللغة
+                        العربية بالمراحل التعليمية الابتدائي و المتوسط و الثانوي
+                        ممن يسعون للحصول علي الرخصة لمهنية
+                      </p>
+                    </div>
+                    <div class="last-card">
+                      <div class="clele">
+                        <img src="photo/clele.svg" alt="" />
+                        <p>2024-05-30 2024-02-24</p>
+                      </div>
+                      <div class="win">
+                        <img src="photo/win.svg" alt="" />
+                        <p>25 محاضرة</p>
+                      </div>
+                      <div class="hours">
+                        <img src="photo/houere.svg" alt="" />
+                        <p>1520 ساعة</p>
+                      </div>
+                      <div class="days">
+                        <img src="photo/days.svg" alt="" />
+                        <p>85 يوم</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="detalies_bags.html">
+              <div class="bags-card">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="img">
+                      <img src="photo/photo-bags.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="adress-card">
+                      <h4>
+                        البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي
+                        الرخصة المهنية
+                      </h4>
+                      <p class="stats-three">حقيبة مُنتهية</p>
+                    </div>
+                    <div class="card-content">
+                      <p>لغة عربية . ( 20/30 ) مُتدرب</p>
+                      <p>انشأت بتاريخ 25 يناير,2024</p>
+                    </div>
+                    <div class="reat">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="small">
+                        <p>4.9</p>
+                      </div>
+                      <p class="text-reat">(220 التقيم)</p>
+                    </div>
+                    <div class="works">
+                      <div class="prag">
+                        <img src="photo/right.svg" alt="" />
+                        <p>
+                          اتقان معلمي اللغة العربية للجوانب المعرفية والادائية
+                          اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية
+                        </p>
+                      </div>
+                      <div class="prag">
+                        <img src="photo/right.svg" alt="" />
+                        <p>
+                          اتقان معلمي اللغة العربية للجوانب المعرفية والادائية
+                          اللازمة لتعليم و تعلم اللغة العربية بجودة و دقة عالية
+                        </p>
+                      </div>
+                    </div>
+                    <div class="scope">
+                      <img src="photo/scop.svg" alt="" />
+                      <p>
+                        <span>الفئة المستهدفة : </span>معلمي و معلمات اللغة
+                        العربية بالمراحل التعليمية الابتدائي و المتوسط و الثانوي
+                        ممن يسعون للحصول علي الرخصة لمهنية
+                      </p>
+                    </div>
+                    <div class="last-card">
+                      <div class="clele">
+                        <img src="photo/clele.svg" alt="" />
+                        <p>2024-05-30 2024-02-24</p>
+                      </div>
+                      <div class="win">
+                        <img src="photo/win.svg" alt="" />
+                        <p>25 محاضرة</p>
+                      </div>
+                      <div class="hours">
+                        <img src="photo/houere.svg" alt="" />
+                        <p>1520 ساعة</p>
+                      </div>
+                      <div class="days">
+                        <img src="photo/days.svg" alt="" />
+                        <p>85 يوم</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
 
@@ -495,6 +517,28 @@
             }
             i++;
           }, speed);
+        });
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            '<h5 class="swal2-title">   هل أنت متأكد من تسجيل الخروج؟ </h5>' +
+            '<p class="swal2-html-container">  </p>',
+
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: "نعم",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
         });
       }
     </script>
