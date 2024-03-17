@@ -74,6 +74,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="teacher_detalies.html" class="nav-link align-middle">
+                <i class="fa-solid fa-gear ico"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <div class="nav-link align-middle goout" onclick="blockAlert()">
               <i class="fa-solid fa-right-from-bracket ico"></i>
               <span>تسجيل الخروج</span>
@@ -394,20 +400,23 @@
             </select>
             <div class="add-attch">
               <div class="form-group upload_file">
-                <label for=""> اضافة مرفقات</label>
-                <label for="imageCover" class="upload_file_label">
-                  <div class="ico-gala" id="imageIcon"></div>
-                  <p id="imageText"></p>
-                  <span id="fileNameImage"
-                    ><i class="fa-solid fa-circle-plus"></i
-                  ></span>
-                </label>
+                <label for="">اضافة مرفقات</label>
+                <div class="add" id="imageContainer">
+                  <label for="imageCover" class="upload_file_label">
+                    <div class="ico-gala" id="imageIcon"></div>
+                    <p id="imageText"></p>
+                    <span id="fileNameImage"
+                      ><i class="fa-solid fa-circle-plus"></i
+                    ></span>
+                  </label>
+                </div>
                 <input
                   type="file"
-                  name=""
+                  name="images[]"
                   id="imageCover"
                   class="form-control"
                   accept="image/*"
+                  multiple
                   hidden
                 />
               </div>
@@ -441,6 +450,39 @@
         });
       }
     </script>
+       <script>
+        document
+          .getElementById("imageCover")
+          .addEventListener("change", function () {
+            const files = this.files;
+            const imageContainer = document.getElementById("imageContainer");
+  
+            // Clear previous images
+            imageContainer.innerHTML = "";
+  
+            // Loop through each selected file
+            for (let i = 0; i < files.length; i++) {
+              const file = files[i];
+              const reader = new FileReader();
+  
+              reader.onload = function (e) {
+                // Create image element
+                const imgElement = document.createElement("img");
+                imgElement.src = e.target.result;
+                imgElement.classList.add("uploaded-image");
+  
+                // Append image to container
+                imageContainer.appendChild(imgElement);
+              };
+  
+              reader.readAsDataURL(file); // Read file as data URL
+            }
+  
+            // Update text based on the number of images selected
+            document.getElementById("imageText").innerText =
+              files.length + " images selected";
+          });
+      </script>
 
     <script src="js/main.js"></script>
   </body>

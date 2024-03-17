@@ -1078,6 +1078,16 @@ h5#exampleModalLabel {
   margin-bottom: 0;
   cursor: pointer;
 }
+.form-group.upload_file .upload_file_labels {
+  background-color: #9da6ba17;
+  border: 1px dashed #828c8d;
+  width: 50%;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
 .sweet {
   font-family: "regular";
 }
@@ -1804,12 +1814,101 @@ button#closeSidebarBtn {
   font-family: "bold";
 }
 button.swal2-confirm.swal2-styled {
-  font-family: 'bold';
+  font-family: "bold";
 }
 .goout {
   cursor: pointer;
 }
 /* live */
+/* cover */
+.change-cover .cover {
+  width: 100%;
+  height: 230px;
+  background-image: url(../photo/cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+.change-cover .change {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+  display: block;
+  margin-inline-start: auto;
+  font-family: "regular";
+  color: #546881;
+}
+.change-cover .change svg {
+  margin-left: 10px;
+}
+.change-cover .photo-profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-top: -40px;
+  margin-right: 25px;
+  border: 3px solid #e5890a;
+}
+#upload-icon {
+  position: relative;
+}
+.change-cover .photo-profile #upload-icon svg {
+  margin-bottom: -34px;
+  margin-right: -37px;
+  background-color: white;
+  border: 1px solid #e5890a;
+  padding: 0.4rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 111;
+  color: #e5890a;
+  top: -30px;
+  right: 142px;
+  cursor: pointer;
+}
+.change-cover .full-name {
+  width: 50%;
+  border: 1px solid #b2bbc6;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.change-cover form {
+  margin-top: 40px;
+}
+.change-cover textarea {
+  width: 50%;
+  border: 1px solid #b2bbc6;
+  border-radius: 10px;
+}
+.change-cover .full-name input {
+  border: 0;
+  outline: 0;
+  background-color: unset;
+  width: 100%;
+}
+div#imageContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+div#imageContainer img {
+  width: 100px;
+  height: 100px;
+}
+input.savethis {
+  margin-top: 20px;
+  width: 50%;
+  padding: 0.8rem;
+  font-family: "regular";
+  color: white;
+  background-color: #e5890a;
+  border: 1px solid;
+  border-radius: 10px;
+}
+/* cover */
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1476px) {
@@ -2115,6 +2214,18 @@ button.swal2-confirm.swal2-styled {
   .right-massage {
     border-left: 1px solid rgba(0, 0, 0, 0.233);
   }
+  .change-cover .full-name {
+    width: 100%;
+  }
+  .change-cover textarea {
+    width: 100%;
+  }
+  .form-group.upload_file .upload_file_labels {
+    width: 100%;
+  }
+  input.savethis {
+    width: 100%;
+  }
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 768.98px) {
@@ -2228,6 +2339,34 @@ button.swal2-confirm.swal2-styled {
     background-color: #090500;
   }
   .questions-files p {
+    width: 100%;
+  }
+  .change-cover .photo-profile img {
+    margin-right: 3px;
+  }
+  .change-cover .photo-profile #upload-icon svg {
+    background-color: white;
+    border: 1px solid #e5890a;
+    padding: 0.6rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 111;
+    color: #e5890a;
+    top: -35px;
+    right: 126px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .change-cover .full-name {
+    width: 100%;
+  }
+  .change-cover textarea {
+    width: 100%;
+  }
+  .form-group.upload_file .upload_file_labels {
+    width: 100%;
+  }
+  input.savethis {
     width: 100%;
   }
 }
@@ -2474,9 +2613,37 @@ button.swal2-confirm.swal2-styled {
     padding: 0.5rem;
     overflow: scroll;
     width: 50%;
-}
-.menu svg {
-  margin-right: 8px;
-  font-size: 1.5rem;
-}
+  }
+  .menu svg {
+    margin-right: 8px;
+    font-size: 1.5rem;
+  }
+  .change-cover .photo-profile img {
+    margin-right: 3px;
+  }
+  .change-cover .photo-profile #upload-icon svg {
+    background-color: white;
+    border: 1px solid #e5890a;
+    padding: 0.6rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 111;
+    color: #e5890a;
+    top: -35px;
+    right: 126px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .change-cover .full-name {
+    width: 100%;
+  }
+  .change-cover textarea {
+    width: 100%;
+  }
+  .form-group.upload_file .upload_file_labels {
+    width: 100%;
+  }
+  input.savethis {
+    width: 100%;
+  }
 }

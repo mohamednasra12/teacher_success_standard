@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <link rel="stylesheet" href="css/sign-in.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <!--  -->
     <link
@@ -175,19 +179,67 @@
         <!-- content -->
         <div class="main-styel">
           <div class="title">
-            <h4>الرسائل</h4>
+            <h4>اعدادات الحساب</h4>
             <p>
               الرئيسية
 
               <i class="fa-solid fa-chevron-left"></i>
-              <span>الرسائل</span>
+              <span>اعدادات الحساب</span>
             </p>
           </div>
           <div class="main-content">
-            <div class="not-found">
-              <img src="photo/notmassage.png" alt="" />
-              <h4>عذراً .. لا يوجد رسائل لديك ..!</h4>
-              <p>فقط سيظهر هنا الرسائل بينك و بين المُتدربين لديك</p>
+            <div class="change-cover">
+              <div class="cover">
+                <button class="change">
+                  <i class="fa-solid fa-image"></i> تغيير الكافر
+                </button>
+              </div>
+
+              <!-- Hidden file input to handle image upload -->
+              <input type="file" id="fileInput" style="display: none" />
+              <div class="photo-profile">
+                <img id="profile-img" src="photo/photo-bags.png" alt="" />
+                <div id="upload-icon">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+              </div>
+
+              <!-- Hidden file input for image upload -->
+              <input type="file" id="file-input" style="display: none" />
+              <form action="">
+                <label for="">الاسم بالكامل *</label>
+                <div class="full-name">
+                  <input type="text" placeholder="ادخل الاسم" />
+                </div>
+                <label for="">نبذة عني *</label>
+                <div class="target">
+                  <textarea name="" id="" rows="10"></textarea>
+                </div>
+                <div class="add-attch">
+                  <div class="form-group upload_file">
+                    <label for="">اضافة صور او شهادات خاصة بك *</label>
+                    <div class="add" id="imageContainer">
+                      <label for="imageCover" class="upload_file_labels">
+                        <div class="ico-gala" id="imageIcon"></div>
+                        <p id="imageText"></p>
+                        <span id="fileNameImage"
+                          ><i class="fa-solid fa-circle-plus"></i
+                        ></span>
+                      </label>
+                    </div>
+                    <input
+                      type="file"
+                      name="images[]"
+                      id="imageCover"
+                      class="form-control"
+                      accept="image/*"
+                      multiple
+                      hidden
+                    />
+                  </div>
+                </div>
+                <input type="submit" value="حفظ التغييرات" class="savethis"/>
+              </form>
             </div>
           </div>
         </div>
@@ -216,6 +268,89 @@
           cancelButtonAriaLabel: "Thumbs down",
         });
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the button and file input elements
+        const changeButton = document.querySelector(".change");
+        const fileInput = document.getElementById("fileInput");
+
+        // Add click event listener to the button
+        changeButton.addEventListener("click", function () {
+          // Trigger click event on the hidden file input
+          fileInput.click();
+        });
+
+        // Add change event listener to the file input
+        fileInput.addEventListener("change", function () {
+          const file = this.files[0]; // Get the selected file
+          if (file) {
+            // Check if a file is selected
+            const reader = new FileReader(); // Create a FileReader object
+            reader.onload = function (e) {
+              // Set the uploaded image as the background image of the cover div
+              document.querySelector(
+                ".cover"
+              ).style.backgroundImage = `url(${e.target.result})`;
+            };
+            reader.readAsDataURL(file); // Read the file as a data URL
+          }
+        });
+      });
+    </script>
+    <script>
+      document
+        .getElementById("upload-icon")
+        .addEventListener("click", function () {
+          document.getElementById("file-input").click();
+        });
+
+      // Listen for changes in the file input
+      document
+        .getElementById("file-input")
+        .addEventListener("change", function () {
+          const file = this.files[0]; // Get the selected file
+          if (file) {
+            const reader = new FileReader(); // Create a new FileReader
+            reader.onload = function (e) {
+              document.getElementById("profile-img").src = e.target.result; // Set the src attribute of the image to the uploaded file
+            };
+            reader.readAsDataURL(file); // Read the file as a data URL
+          }
+        });
+    </script>
+    <script>
+      document
+        .getElementById("imageCover")
+        .addEventListener("change", function () {
+          const files = this.files;
+          const imageContainer = document.getElementById("imageContainer");
+
+          // Clear previous images
+          imageContainer.innerHTML = "";
+
+          // Loop through each selected file
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+              // Create image element
+              const imgElement = document.createElement("img");
+              imgElement.src = e.target.result;
+              imgElement.classList.add("uploaded-image");
+
+              // Append image to container
+              imageContainer.appendChild(imgElement);
+            };
+
+            reader.readAsDataURL(file); // Read file as data URL
+          }
+
+          // Update text based on the number of images selected
+          document.getElementById("imageText").innerText =
+            files.length + " images selected";
+        });
     </script>
     <script src="js/main.js"></script>
   </body>
