@@ -1121,6 +1121,22 @@ h5#exampleModalLabel {
   color: white;
   border-radius: 10px;
 }
+.up-folders {
+  background-color: white;
+  font-family: "regular";
+  border: 1px solid #e5890a;
+  padding: 0.5rem;
+  color: #e5890a;
+  border-radius: 10px;
+}
+.table {
+  font-family:"regular";
+  font-size: 0.8rem; 
+  color: #3D4C5E;
+  border: 1px solid #3d4c5e21 ;
+  margin-top: 1rem;
+}
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -1136,6 +1152,7 @@ h5#exampleModalLabel {
   justify-content: space-between;
   align-items: center;
 }
+
 .all-content {
   display: flex;
   justify-content: start;
@@ -1950,6 +1967,26 @@ input.savethis {
   font-family: "regular";
   color: #546881;
 }
+.table > thead {
+  background-color: #F5F6F7;
+  color: #47586E;
+}
+.ood {
+  background-color: #F5F6F7;
+}
+.table tr td{
+  min-width: 150px;
+}
+.action {
+  min-width: unset !important;
+}
+button.btn.dropdown-toggles::after {
+display: none;
+}
+ul.dropdown-menu.show {
+  text-align: start;
+}
+
 /* cover */
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1969,6 +2006,10 @@ input.savethis {
   .main-live .Recepion-massages {
     width: 57%;
   }
+  .table tr td{
+    min-width: 100px;
+  }
+
 }
 @media only screen and (max-width: 1440px) {
   .img img {
@@ -2016,6 +2057,10 @@ input.savethis {
   .main-live .dropdown-toggle {
     margin-inline-end: -11px;
   }
+  .table tr td{
+    min-width: 100px;
+  }
+
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1024.98px) {
@@ -2174,6 +2219,9 @@ input.savethis {
     top: 115px;
     right: 7%;
   }
+  .table tr td{
+    min-width: 120px;
+  }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -2268,6 +2316,7 @@ input.savethis {
   input.savethis {
     width: 100%;
   }
+
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 768.98px) {
@@ -2411,6 +2460,7 @@ input.savethis {
   input.savethis {
     width: 100%;
   }
+ 
 }
 
 /* Extra small devices (phones, 767px and down) */
@@ -2687,5 +2737,8 @@ input.savethis {
   }
   input.savethis {
     width: 100%;
+  }
+  .table tr td{
+    min-width: unset;
   }
 }
