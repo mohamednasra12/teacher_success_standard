@@ -31,6 +31,7 @@ a {
 body {
   direction: rtl;
   counter-reset: section;
+  overflow-x: hidden;
 }
 ::placeholder {
   color: rgba(128, 128, 128, 0.212);
@@ -258,7 +259,7 @@ textarea {
 .sidebar .nav-pills svg {
   float: left;
   font-size: 1.1rem;
-  margin-top: 0.2rem;
+  
   color: #828c8d;
   transform: rotate(0deg);
   display: none;
@@ -1063,6 +1064,16 @@ button.btn.btn-primary {
   font-family: "regular";
   border: 1px solid #e5890a;
   margin-top: 20px;
+}
+.shows {
+  width: 100%;
+  background-color: #e5890a;
+  font-family: "regular";
+  border: 1px solid #e5890a;
+  color: white;
+  font-family: "regular";
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 h5#exampleModalLabel {
   font-family: "bold";
@@ -1907,6 +1918,37 @@ input.savethis {
   background-color: #e5890a;
   border: 1px solid;
   border-radius: 10px;
+}
+.all-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 5px;
+}
+.eidit {
+  width: 100%;
+  padding: 0.8rem;
+  font-family: "regular";
+  color: #e5890a;
+  background-color: #e58a0a33;
+  font-size: 0.8rem;
+  border: 1px solid #e5890a;
+  border-radius: 10px;
+}
+.delete {
+  width: 100%;
+  padding: 0.8rem;
+  font-family: "regular";
+  color: red;
+  background-color: rgba(255, 0, 0, 0.151);
+  font-size: 0.8rem;
+  border: 1px solid #e5890a;
+  border-radius: 10px;
+}
+.prag-set p {
+  font-family: "regular";
+  color: #546881;
 }
 /* cover */
 /* ---------------------------------------------------------media query------------------------------------------- */

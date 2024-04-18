@@ -39,7 +39,7 @@ var tooltipTriggerList = [].slice.call(
     });
   });
 
- 
+
 
 document.querySelectorAll(".nav-link").forEach((link) => {
   if (link.href === window.location.href) {
